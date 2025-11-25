@@ -156,7 +156,7 @@
             const newQuantity = cart[itemIndex].quantity + delta;
             
             if (newQuantity <= 0) {
-                // Si la cantidad mínima (1) es bajada, se elimina el producto (Requisito B-05)
+                // Si la cantidad mínima (1) es bajada, se elimina el producto
                 cart.splice(itemIndex, 1);
             } else {
                 cart[itemIndex].quantity = newQuantity;
@@ -166,7 +166,7 @@
     }
 
     /**
-     * Redirige a la página de pago externo (Simulación B-07).
+     * Redirige a la página de pago externo.
      */
     function goToPayment() {
         console.log("Redirigiendo a Plataforma de Pago Externo (Simulación B-07)");
