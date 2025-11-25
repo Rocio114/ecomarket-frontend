@@ -256,9 +256,9 @@
             if (newStatus === 'entregado') {
                 const deliveredOrder = activeOrders.splice(orderIndex, 1)[0];
                 console.log(`Pedido ${deliveredOrder.id} marcado como ENTREGADO y archivado.`);
-                alert(`✅ Pedido N° ${orderToEditId} ha sido marcado como ENTREGADO y archivado.`);
+                alert(`Pedido N° ${orderToEditId} ha sido marcado como ENTREGADO y archivado.`);
             } else {
-                alert(`✅ Estado del Pedido N° ${orderToEditId} actualizado a ${STATUS_MAP_ADMIN[newStatus].name}.`);
+                alert(`Estado del Pedido N° ${orderToEditId} actualizado a ${STATUS_MAP_ADMIN[newStatus].name}.`);
             }
         }
         
