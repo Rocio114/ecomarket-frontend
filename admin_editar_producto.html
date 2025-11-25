@@ -107,7 +107,7 @@
 </div>
 
 <script>
-    // Producto simulado para precargar el formulario (usado para B-17)
+    // Producto simulado para precargar el formulario
     const mockProduct = { 
         id: 99, 
         name: "Producto de Prueba", 
@@ -130,7 +130,7 @@
     }
 
     /**
-     * Maneja el envío del formulario para simular la edición (B-17).
+     * Maneja el envío del formulario para simular la edición.
      */
     document.getElementById('edit-product-form').addEventListener('submit', function(e) {
         e.preventDefault();
@@ -145,13 +145,13 @@
         const productName = document.getElementById('input-name').value;
         
         // Mensaje de éxito de edición
-        alert(`✅ Producto "${productName}" editado con éxito.`);
+        alert(`Producto "${productName}" editado con éxito.`);
         
         goBackToList();
     });
     
     /**
-     * Simula la eliminación del producto (B-17).
+     * Simula la eliminación del producto.
      */
     function deleteProduct() {
         if (confirm("¿Estás seguro de que deseas eliminar este producto? Esta acción es irreversible.")) {
